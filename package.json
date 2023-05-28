@@ -8,6 +8,8 @@
     "preview": "npm run build && vite preview",
     "test": "vitest",
     "test:ui": "vitest --ui",
+    "aws-deploy": "cd cdk && cdk deploy",
+    "aws-delete": "cd cdk && cdk destroy",
     "test:coverage": "vitest run --coverage",
     "lint": "eslint --ignore-path .gitignore --fix src",
     "prettier": "prettier src --write"
@@ -19,6 +21,7 @@
     "@mui/material": "^5.8.7",
     "@mui/styles": "^5.8.7",
     "@types/yup": "^0.29.14",
+    "aws-cdk-lib": "^2.81.0",
     "axios": "^0.27.2",
     "formik": "^2.2.9",
     "react": "^18.2.0",
